@@ -33,30 +33,41 @@ public class CheckPalindromeTest {
         //arange
 
         //Act
-        String result= pal.palindrome(121);
+        String result= pal.palindrome("apa");
 
         //Assert
         assertEquals("Palindrome",result);
     }
     @Test
-    public void givenAnotherPalindromeNumberShouldReturnCorrectMessage(){
+    public void givenNullShouldReturnErrorMessage(){
         //arange
 
         //Act
-        String result= pal.palindrome(4685864 );
+        String result= pal.palindrome(null );
 
         //Assert
-        assertEquals("Palindrome",result);
+        assertEquals("null",result);
     }
     @Test
     public void givenNonPalindromeNumberShouldReturnErrorMessage(){
         //arange
 
         //Act
-        String result= pal.palindrome(1234 );
+        String result= pal.palindrome("arpita" );
 
         //Assert
         assertEquals("Not Palindrome",result);
+    }
+
+    @Test
+    public void givenNumberShouldReturnCorrectMessage(){
+        //arange
+
+        //Act
+        String result= pal.palindrome("1234321" );
+
+        //Assert
+        assertEquals("Palindrome",result);
     }
 
 }

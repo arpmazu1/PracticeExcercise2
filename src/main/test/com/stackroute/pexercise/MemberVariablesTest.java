@@ -30,7 +30,7 @@ public class MemberVariablesTest {
     }
 
     @Test
-    public void givenZeroShouldReturnErrorMessage(){
+    public void givenInputShouldReturnCorrectMessage(){
         //arange
 
         //Act
